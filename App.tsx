@@ -4,7 +4,7 @@ import { ImageFile, ProcessingState, GeneratedImage } from './types';
 import { Button } from './components/Button';
 import { Upload, Wand2, Download, RefreshCw, Image as ImageIcon, Sparkles, X, ChevronRight } from 'lucide-react';
 
-const DEFAULT_PROMPT = `Using the reference image, create a hyper-realistic modern oil painting with soft directional lighting. Preserve the outfit details. Add refined brush textures and natural skin tones. Background should be a soft, blurred studio gradient in deep navy and charcoal. Ultra-detailed realism, elegant fine-art finish. Portrait size: 4:5 ratio.`;
+const DEFAULT_PROMPT = `Using the uploaded image as the model, create an Impressionist portrait with expressive brushstrokes and lively, harmonious colors. Preserve the outfit details with textured strokes. Background should be abstract soft strokes of blues, greens, and warm golden tones. Portrait size: 2048 × 2560 px, 4:5 ratio, high-resolution.`;
 
 const EXAMPLE_IMAGE_URL = "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=2576&auto=format&fit=crop"; 
 
@@ -120,7 +120,7 @@ const App: React.FC = () => {
               Transform Reality with AI
             </h2>
             <p className="text-lg text-gray-400 mb-10 leading-relaxed">
-              Upload a photo and describe your artistic vision. Our advanced Gemini 2.5 Flash model will re-imagine your image with hyper-realistic details, artistic textures, and professional lighting.
+              Upload a photo and describe your artistic vision. Our advanced Gemini 2.5 Flash model will re-imagine your image with expressive Impressionist brushstrokes, lively colors, and artistic textures.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Button 
@@ -225,7 +225,7 @@ const App: React.FC = () => {
                       </div>
                       <div>
                         <h3 className="text-xl font-medium text-white mb-2">Processing Vision</h3>
-                        <p className="text-gray-400 max-w-xs mx-auto">Applying oil painting textures, lighting adjustments, and color grading...</p>
+                        <p className="text-gray-400 max-w-xs mx-auto">Applying impressionist brushstrokes, lively colors, and artistic textures...</p>
                       </div>
                     </div>
                   ) : (
